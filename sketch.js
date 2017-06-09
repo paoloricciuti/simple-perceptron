@@ -8,11 +8,11 @@ var bInput;
 var nOfP=200;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(400, 400);
   createP("M-value");
-  mInput=createSlider(0, 600, 300);
+  mInput=createSlider(0, height, height/2);
   createP("B-value");
-  bInput=createSlider(0, 600, 0);
+  bInput=createSlider(0, height, 0);
   mInput.input(updateMandB);
   bInput.input(updateMandB);
   m=1/2;
@@ -24,7 +24,7 @@ function setup() {
 }
 
 function updateMandB(){
-  m=mInput.value()/600;
+  m=mInput.value()/height;
   b=bInput.value();
   for(var i=0; i<nOfP; i++){
     data[i].relabel();
