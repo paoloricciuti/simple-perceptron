@@ -8,7 +8,7 @@ var bInput;
 var nOfP=200;
 
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(350, 350);
   createP("M-value");
   mInput=createSlider(0, height, height/2);
   createP("B-value");
